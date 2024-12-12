@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReactComps/static/css/main.6678e3a0.css",
+    "main.js": "/ReactComps/static/js/main.b858695a.js",
+    "static/js/488.9c92ff38.chunk.js": "/ReactComps/static/js/488.9c92ff38.chunk.js",
+    "index.html": "/ReactComps/index.html",
+    "main.6678e3a0.css.map": "/ReactComps/static/css/main.6678e3a0.css.map",
+    "main.b858695a.js.map": "/ReactComps/static/js/main.b858695a.js.map",
+    "488.9c92ff38.chunk.js.map": "/ReactComps/static/js/488.9c92ff38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6678e3a0.css",
+    "static/js/main.b858695a.js"
+  ]
+}

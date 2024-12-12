@@ -1,0 +1,34 @@
+.liquid-crystal {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, #00f2ff, #ff00f2, #f2ff00);
+    background-size: 200%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    animation: liquidMove 4s infinite;
+    cursor: pointer;
+  }
+  
+  @keyframes liquidMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .liquid-crystal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+  

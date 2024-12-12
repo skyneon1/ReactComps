@@ -1,0 +1,182 @@
+/* General Showcase Page Styles */
+.showcase {
+  margin: 40px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #6c7bff, #6a5acd);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: linear-gradient(45deg, #0f3460, #6c5ce7);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn.primary:hover {
+  background: linear-gradient(45deg, #0f3460, #9b59b6);
+  transform: translateY(-5px);
+}
+
+.btn.secondary {
+  background: #e94560;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn.secondary:hover {
+  background: #d32f2f;
+  transform: translateY(-5px);
+}
+
+.btn.outline {
+  border: 2px solid #0f3460;
+  color: #0f3460;
+  background: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn.outline:hover {
+  background-color: #0f3460;
+  color: white;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(-30px);
+  transition: all 0.3s ease;
+}
+
+.modal-content.show {
+  transform: translateY(0);
+}
+
+/* Card Styles */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.card p {
+  color: #ddd;
+}
+
+/* Tooltip Styles */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(10px);
+}
+
+/* Accordion Styles */
+.accordion {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.accordion-item {
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.accordion-item:hover {
+  background: #34495e;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.accordion-item.active + .accordion-content {
+  display: block;
+}
+
+/* Layout Enhancements */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}

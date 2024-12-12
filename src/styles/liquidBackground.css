@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460);
+    background-size: 300% 300%;
+    animation: gradientMove 10s infinite;
+    color: rgb(88, 88, 88);
+    overflow-x: hidden;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  h1, h2, p {
+    color: #ff0000;
+  }
+  

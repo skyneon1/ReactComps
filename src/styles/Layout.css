@@ -1,0 +1,168 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: liquidBackground 5s ease infinite;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for liquid background */
+@keyframes liquidBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Logo styling */
+.navbar .logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Navigation links styling */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: #ff4081;
+  transform: scale(1.1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Showcase button styling */
+.showcase-btn {
+  padding: 10px 25px;
+  border: 2px solid #ff4081;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #ff4081;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.showcase-btn:hover {
+  background-color: #ff4081;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 64, 129, 0.5);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: #252525;
+  padding: 20px;
+  z-index: 5;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #ff4081;
+  border-radius: 5px;
+}
+
+/* Ensure navbar is above sidebar */
+body {
+  margin-top: 70px; /* Adjust this based on navbar height */
+}
+
+/* Content */
+.main-content {
+  margin-left: 260px; /* To ensure sidebar doesn’t overlap content */
+  padding: 20px;
+}
+/* Assuming your Navbar has the class .navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Higher than the sidebar's z-index */
+  background-color: #333; /* Adjust navbar background color */
+  padding: 20px;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
